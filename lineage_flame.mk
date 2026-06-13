@@ -49,3 +49,21 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=flame
 
 $(call inherit-product, vendor/google/flame/flame-vendor.mk)
+
+# Avium UI Specific Configs
+AVIUM_VERSION_APPEND_TIME_OF_DAY := true
+AVIUM_MAINTAINER := DonnerTech
+AVIUM_SETTINGS_SOC_MODEL_NAME := Snapdragon 855
+AVIUM_SETTINGS_DEVICE_CODENAME := flame
+
+# Включить Google сервисы
+WITH_GMS := true
+
+# Спуфинг для обхода блокировок (Play Integrity)
+AVIUM_FORCE_SET_FAKE_PROP := true
+
+# Блюр в системе (у Pixel 4 хватает мощности)
+TARGET_FORCE_ENABLE_BLUR := true
+
+# Отключаем проверку путей для GMS
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
