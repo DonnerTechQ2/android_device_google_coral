@@ -49,3 +49,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=flame
 
 $(call inherit-product, vendor/google/flame/flame-vendor.mk)
+
+CLOVER_MAINTAINER := DonnerTech
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+
+# Отключаем проверку путей для GMS
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
