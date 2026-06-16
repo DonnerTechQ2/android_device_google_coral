@@ -50,6 +50,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 $(call inherit-product, vendor/google/coral/coral-vendor.mk)
 
+# Включение приложений Avium
+PRODUCT_PACKAGES += \
+    MoonWidget \
+    ScreenshotEdit
+
 # Флаги Clover
 CLOVER_MAINTAINER := DonnerTech
 TARGET_ENABLE_BLUR := true

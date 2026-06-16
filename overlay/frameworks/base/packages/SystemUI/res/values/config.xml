@@ -9,4 +9,7 @@
 <resources>
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
     <integer name="config_keyguardRefreshRate">60</integer>
+
+     <!-- Замена стандартного редактора скриншотов на Avium -->
+    <string name="config_preferredScreenshotEditor" translatable="false">org.avium.screenshotedit/.MainActivity</string>
 </resources>
