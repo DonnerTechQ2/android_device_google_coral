@@ -32,5 +32,5 @@ BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/misc_wr
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/google/thermal
 
 # Lineage-specific
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/dynamic/lineage
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/lineage
+# BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/dynamic/lineage
+# BOARD_VENDOR_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/lineage
