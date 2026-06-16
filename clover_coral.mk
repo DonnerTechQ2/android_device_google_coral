@@ -4,7 +4,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system image
@@ -41,7 +41,7 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := coral
 PRODUCT_MANUFACTURER := Google
 PRODUCT_MODEL := Pixel 4 XL
-PRODUCT_NAME := lineage_coral
+PRODUCT_NAME := clover_coral
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="coral-user 13 TP1A.221005.002.B2 9382335 release-keys" \
@@ -49,3 +49,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=coral
 
 $(call inherit-product, vendor/google/coral/coral-vendor.mk)
+
+# Флаги Clover
+CLOVER_MAINTAINER := DonnerTech
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+
+# Отключаем проверку путей для GMS
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false

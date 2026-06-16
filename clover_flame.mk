@@ -4,7 +4,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system image
@@ -41,7 +41,7 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := flame
 PRODUCT_MANUFACTURER := Google
 PRODUCT_MODEL := Pixel 4
-PRODUCT_NAME := lineage_flame
+PRODUCT_NAME := clover_flame
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="flame-user 13 TP1A.221005.002.B2 9382335 release-keys" \
@@ -50,6 +50,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 $(call inherit-product, vendor/google/flame/flame-vendor.mk)
 
+# Флаги Clover
 CLOVER_MAINTAINER := DonnerTech
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
