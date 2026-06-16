@@ -498,7 +498,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config_$(PRODUCT_HARDWARE)_jaws.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_jaws.json
 
 # Touch
-include hardware/google/pixel/touch/device.mk
+# include hardware/google/pixel/touch/device.mk
 
 # USB
 PRODUCT_PACKAGES += \
